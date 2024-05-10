@@ -60,5 +60,13 @@ Your branch is ahead of 'origin/master' by 8 commits.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
+
+$ git branch -a
+  elisencode_javaSE
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/elisencode_javaSE
+  remotes/origin/master
+
 ```
 
