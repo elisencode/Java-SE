@@ -70,3 +70,32 @@ $ git branch -a
 
 ```
 
+---
+
+[How to Delete Local and Remote Git Branches](https://refine.dev/blog/git-delete-remote-branch-and-local-branch/#what-are-tracking-branches-and-how-to-delete-them)
+
+[Git Cleanup: "git Remote Prune" Explained](https://betterprogramming.pub/git-cleanup-git-remote-prune-explained-679fadc53ba7)
+
+```
+$ git branch
+  elisencode_javaSE
+* master
+
+$ git branch -d elisencode_javaSE 
+Deleted branch elisencode_javaSE (was 63fdc68).
+
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/elisencode_javaSE
+  origin/master
+  
+$ git remote prune origin
+Pruning origin
+URL: git@github.com:elisencode/Java-SE.git
+ * [pruned] origin/elisencode_javaSE
+
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+```
+
